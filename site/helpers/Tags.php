@@ -18,7 +18,7 @@ class Tags extends AbstractTags
     }
 
     public function showSpotifyId() {
-        $user == User::getCurrent();
+        $user = User::getCurrent();
 
         return $user->getOAuthID('spotify');
     }
