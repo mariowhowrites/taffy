@@ -1,0 +1,10 @@
+title: Text File
+
+fields:
+  text:
+    display: Text
+  file:
+    display: File
+    type: file
+    destination: textfiles/
+    validate: mimes:txt
