@@ -5,6 +5,11 @@
         Redwood Theme
     </h1>
 
+    {{ if logged_in }}
+    {{ user }}
+    {{ dump }}
+    {{ /user }}
+    {{ /if }}
 	<article class="list">
 		{{ collection:blog limit="3" scope="tag" }}
 			{{ partial:block }}
